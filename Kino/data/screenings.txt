@@ -1,0 +1,10 @@
+Avatar;2025-05-20T18:30;Hall 1
+Barbie;2025-06-01T18:30;Hall 1
+Coco;2025-06-07T16:00;Hall 1
+Dune: Part Two;2025-06-05T17:45;Hall 2
+Interstellar;2025-06-03T19:00;Hall 3
+Oppenheimer;2025-06-02T20:00;Hall 2
+Star Wars: Episode IV;2025-06-09T20:30;Hall 3
+The Godfather;2025-06-06T20:00;Hall 3
+The Matrix;2025-06-04T21:15;Hall 1
+Titanic;2025-05-21T20:00;Hall 2

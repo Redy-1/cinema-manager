@@ -1,0 +1,10 @@
+Avatar;162;Sci-Fi
+Titanic;195;Drama
+Barbie;114;Comedy
+Oppenheimer;120;Biography
+Interstellar;169;Sci-Fi
+The Matrix;136;Action
+Dune: Part Two;155;Adventure
+The Godfather;175;Crime
+Coco;105;Animation
+Star Wars: Episode IV;121;Sci-Fi
