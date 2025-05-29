@@ -128,7 +128,7 @@ public class GUI extends JFrame {
         setVisible(true);
     }
 
-    // 🔁 Заменен с MyList<Screening>
+    
     private void showScreenings(MyList<Screening> screenings) {
         outputArea.setText("");
         for (int i = 0; i < screenings.size(); i++) {
