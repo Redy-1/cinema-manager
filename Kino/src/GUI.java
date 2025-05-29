@@ -2,7 +2,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class GUI extends JFrame {
     private CinemaManager manager;
@@ -30,8 +29,6 @@ public class GUI extends JFrame {
         JButton showAllBtn = new JButton("Покажи всички прожекции");
         JButton saveBtn = new JButton("Запази резервации");
         JButton reserveBtn = new JButton("Направи резервация");
-        
-
 
         panel.add(searchByTitleBtn);
         panel.add(searchByDateBtn);
@@ -47,7 +44,7 @@ public class GUI extends JFrame {
         searchByTitleBtn.addActionListener(e -> {
             String title = JOptionPane.showInputDialog("Въведи заглавие на филм:");
             if (title != null) {
-                ArrayList<Screening> result = manager.searchByTitle(title);
+                MyList<Screening> result = manager.searchByTitle(title);
                 showScreenings(result);
             }
         });
@@ -90,7 +87,7 @@ public class GUI extends JFrame {
         searchByDateBtn.addActionListener(e -> {
             String date = JOptionPane.showInputDialog("Въведи дата (напр. 2025-06-10):");
             if (date != null) {
-                ArrayList<Screening> result = manager.searchByDate(date);
+                MyList<Screening> result = manager.searchByDate(date);
                 showScreenings(result);
             }
         });
@@ -131,10 +128,11 @@ public class GUI extends JFrame {
         setVisible(true);
     }
 
-    
-    private void showScreenings(ArrayList<Screening> screenings) {
+    // 🔁 Заменен с MyList<Screening>
+    private void showScreenings(MyList<Screening> screenings) {
         outputArea.setText("");
-        for (Screening s : screenings) {
+        for (int i = 0; i < screenings.size(); i++) {
+            Screening s = screenings.get(i);
             outputArea.append(s.getMovie().getTitle() + " | " + s.getDateTime() + " | " + s.getHall() + "\n");
         }
     }
