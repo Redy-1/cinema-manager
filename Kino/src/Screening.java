@@ -4,7 +4,7 @@ public class Screening {
     private Movie movie;
     private LocalDateTime dateTime;
     private String hall;
-    private boolean[][] seats = new boolean[5][5]; // 5x5 зала
+    private boolean[][] seats = new boolean[5][5]; 
 
     public Screening(Movie movie, LocalDateTime dateTime, String hall) {
         this.movie = movie;
